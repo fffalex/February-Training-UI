@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Exercise 4 - ""Fruits"", Tables and Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS classes defined inner to html in order to don't repeat inline style for each <td>-->
+        <style>
+            body {background-color: #FAFBDB; font-family: Sans-serif;}
+            form { background-color: #f4ebc6; padding: 3%}
+            table.bordered-table td{border-style: groove; text-align: center}        
+        </style>
+    </head>
+    
+  <body>
+    <div>
+      <!--the main table-->
+      <table style="margin:5%">
+      <tr>
+        <td>
+          <!--fruit table-->
+          <table>
+            <tr>
+              <td><h2 style="margin-left:30%;">Eat animals</h2></td>
+            </tr>
+            <tr>
+              <td style="width: 40%">Why do humans eat meat and other animal? Animal products can improve human nutrition and heart and bone health.</td>
+              <td><img style="width: 40%; margin:3%" src='http://www.lunchblocked.com/wp-content/uploads/2013/06/rat.png' /></td>
+            </tr>
+          </table>
+        </td>
+        
+         <td>
+           <!--Strange letters table-->
+           <div>
+             <table class="bordered-table" style="width: 200px;height:200px">
+                <tr>
+                  <td colspan="3" style="border-style: groove">Rare keyboard</td>
+                  <td>A</td>
+                  <td>B</td>
+                </tr>
+                <tr>
+                  <td rowspan="3">C</td>
+                  <td >D</td>
+                  <td >E</td>
+                  <td >F</td>
+                  <td >G</td>
+                </tr>
+                <tr>
+                  <td >H</td>
+                  <td colspan="2">I</td>
+                  <td rowspan="2">J</td>
+                </tr>
+                <tr>
+                  <td>K</td>
+                  <td>L</td>
+                  <td>M</td>
+                </tr>
+                <tr>
+                  <td>N</td>
+                  <td colspan="4">O</td>
+                </tr>
+              </table>
+           </div>
+        </td>
+       </tr>
+    </table>
+    </div>
+      
+      <div>
+          <form>
+              <p>Member name: <input type="text" id="txb-name" name="txb-name" required /> *</p>
+            <p>Email: <input type="email" id="txb-email" name="txb-email" required/> *</p>
+            <p>School: <input type="text" id="txb-school" name="txb-school" required/> *</p>
+              <input type="submit" id="btn-submit" name="btn-submit" />
+          </form>
+      </div>
+  </body>
+</html>
