@@ -1,0 +1,55 @@
+          html {
+              font-family: Sans-serif;
+              background-color: #CCC;
+          }
+           
+          td {
+              color: #FFF; 
+              font-style: italic;
+              padding:2%;
+          }
+          
+          .ticket{ 
+              background-color: #666; 
+              padding:2%;
+              border: 15px ridge #999;
+              box-shadow:10px 10px 5px #333;
+              width: 40%
+          }
+          
+          h2 { color: #BBB}
+          
+          .normal-yellow{
+              color: #f6ee96;
+          }
+          .alert-red {
+              color:#DF1414;
+              font-size: bold;
+              font-weight: bold;
+            text-shadow: 2px 2px 2px #000 
+          }
+          
+          .normal-gray{
+              color: #BBB;
+          }
+          
+          .warning-orange{
+              color:#f69216;
+          }
+          
+          a {
+            text-decoration: none;
+          }
+          
+          a:visited {
+            color: #f6ee96;
+          }
+          
+          a:link {
+            color: #f6ee96;
+          }
+          
+          .greenball {
+            width:5%;
+          }
+            

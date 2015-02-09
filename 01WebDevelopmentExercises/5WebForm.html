@@ -1,55 +1,117 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>5 Web Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+      
         <style>
-           html {font-family: Sans-serif;}
-            td {color: #FFF; font-style: italic;}
-          .ticket{ background-color: #666; padding:2% }
-          h2 { color: #BBB}
-          yellow-td
+          html{font-family: Sans-serif; background-color: #b2e2e2; }
+          table, th, tr, td {
+            border: thin solid #000;
+            border-collapse:collapse;
+            padding:2%;
+            background-color: #e0fbf2;
+            }
+          input,textarea,select {box-shadow:3px 3px 5px #444; }
           
+          #wrap {
+                float: left;
+                position: relative;
+                left: 50%;
+            }
             
+           #content {
+                float: left;
+                position: relative;
+                left: -50%;
+            }
+          
+          .left-column {
+            font-weight: bold;
+            text-align:right;
+          }
         </style>
-        
     </head>
     <body>
-        <div class="ticket">
-            <h2>Ticket ID: 46812</h2>
-            <table>
+        <div>
+          <table>
                 <tr>
-                  <td>Name: </td>
-                  <td>Parker Gauss</td>
+                  <td class="left-column">Last Name</td>
+                  <td><input type="text" id="txt-lastname" name="lastname"/></td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td>No Activate support</td>
+                  <td class="left-column">First Name</td>
+                  <td><input type="text" id="txt-firstname" name="firstname"/></td>
                 </tr>
                 <tr>
-                  <td>Email</td>
-                  <td>gauss4evervirgin@chotmail.com</td>
+                  <td class="left-column">Address</td>
+                  <td><textarea rows="5" cols="40" ></textarea></td>
                 </tr>
                 <tr>
-                  <td>Response Time:</td>
-                  <td>4512 days, 9 hours left</td>
+                  <td class="left-column">City</td>
+                  <td>
+                    <input type="text" id="txt-city" name="city" style="width: 25%"/><span class="left-column"> State</span> <input type="text" id="txt-state" name="state" style="width: 20%"/>
+                  </td>
+                 
                 </tr>
                 <tr>
-                  <td>Last Action: </td>
-                  <td>Never banned</td>
+                  <td class="left-column">Zip/Postal Code</td>
+                  <td><input type="text" id="txt-pc" name="pc"/></td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td>Link to public post</td>
+                  <td class="left-column">Country</td>
+                  <td>
+                      <select>
+                        <option value="bulgaria" name="country">Bulgaria</option>
+                        <option value="arabia" name="country">Arabia</option>
+                        <option value="bolivia" name="country">Bolivia</option>
+                        <option value="finland" name="country">Finland</option>
+                    </select>
+                  </td>
                 </tr>
                 <tr>
-                  <td>Status</td>
-                  <td>Nobody know</td>
+                  <td class="left-column">Phone (country code, area code, number)</td>
+                  <td>(+ <input type="number" name="area" style="width: 15%"> ) <input type="number" name="phone-p1" style="width: 15%"> - <input type="number" name="phone-p2" style="width: 40%"> </td>
+                </tr>
+                <tr>
+                  <td class="left-column">E-mail</td>
+                  <td><input type="email" name="email"/></td>
+                </tr>
+                <tr>
+                  <td class="left-column">Birth date</td>
+                  <!-- I used input type 'date' instead retro input box!. It's more pretty-->
+                  <td>Month/Day/Year <input type="date" style="width: 50%"></td>
+                </tr>
+                <tr>
+                  <td class="left-column">Gender</td>
+                  <td>
+                  <select>
+                        <option value="male" name="gender">Male</option>
+                        <option value="female" name="gender">Female</option>
+                        <option value="undefined" name="gender">Undefined</option> 
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left-column">Starting date</td>
+                  <td><input type="radio" value="spring" name="starting"> Spring 2006<input type="radio" value="summer" name="starting"> Summer 2006</td>
+                </tr>
+                <tr>
+                  <td class="left-column">Comments/Question</td>
+                  <td><textarea rows="5" cols="40" ></textarea></td>
+                </tr>
+                <tr>
+                  <td style="background-color: #a3e3ce" colspan="2">
+                      <div id="wrap">
+                        <div id="content">
+                         <input type="submit" value="Submit" class="button"><input type="reset" value="Clear this form" class="button">
+                        </div>
+                        </div>                    
+                      </td>
                 </tr>
               </table>
-          
         </div>
     </body>
 </html>
-
