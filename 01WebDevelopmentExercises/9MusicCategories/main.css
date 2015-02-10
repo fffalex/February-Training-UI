@@ -1,0 +1,63 @@
+      idiv {
+        border: 1px solid red; 
+      }
+      
+      html{font-family: Sans-serif; background-color: #eee; }
+      
+      .cat-container{
+        border: 2px groove #DDD;
+        background-color: #FFF;
+        width:500px;
+        padding:5px;
+        position: relative;
+        margin-bottom: 8%;
+      }
+      
+      .img-container{
+        width:240px;
+        float:left;
+     
+      }
+      
+      .button-container{  
+        float:right;
+        position:absolute;
+        bottom:5%;
+        right:2%;
+      }
+      
+      .p-cat-container {
+        word-wrap: break-word;
+        width: 45%;
+        display: inline-block;
+        margin: auto;
+        padding:2%;
+        
+      }
+      
+      .p-clear{
+          clear: both;
+      }
+      
+      img {
+        width:95%;
+        margin: auto;
+        border: 2px ridge #AAA;
+    
+      }
+      
+      button{
+        margin:2px;
+        border: 0px;
+        width: 80px;
+        color: #FFF;
+        text-shadow:3px 3px 5px #444;
+        box-shadow:3px 3px 5px #444;
+        background-image: url('http://www.casablancadj.com/eventtimeline_files/BLANK-RED-BUTTON.gif');
+      }
+      
+      button:hover
+      {
+          cursor: hand;
+      }
+ 
