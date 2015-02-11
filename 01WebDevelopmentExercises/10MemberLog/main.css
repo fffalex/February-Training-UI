@@ -1,10 +1,49 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 10/02/2015, 16:40:15
-    Author     : alexander.dedek
-*/
+  html{font-family: Sans-serif; background-color: #414447; color: #CCC}
+          h2 {color: #e2b33c}
+          b {color:#FFF}
+          div {
+          }     
+            .log-bar{
+            position: relative;
+              background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+              min-width: 500px;
+              width:100%;
+              padding:5px;
+              color: #FFF
 
+            }
+            
+            .go {
+     
+              text-align: center;
+              width: 60px;
+              height: 20px;
+              position: absolute;
+              bottom:15px;
+              right: 5%;
+              margin-left:4%;
+              color: #FFF;
+            text-shadow: 3px 3px 3px #111
+          }
+          .go:hover{
+            cursor:pointer;
+          }
+
+          .go img{
+            width:100%;
+          }
+
+          .log-bar img {
+            width:50px;
+            float:left;
+            margin-right:3%;          
+          }        
+          .log-bar input  {
+            width: 20%;
+            margin-left:4%;
+            margin-top:12px;
+          }
+          .p-clear {
+            margin-bottom:25px;
+            clear:both;
+          }
