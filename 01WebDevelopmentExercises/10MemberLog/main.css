@@ -10,11 +10,10 @@
               width:100%;
               padding:5px;
               color: #FFF
-
             }
             
             .go {
-     
+              background: url('http://www.clker.com/cliparts/5/x/p/5/X/0/long-button-red-off-hi.png') ; background-size: 60px 20px; background-repeat: no-repeat;
               text-align: center;
               width: 60px;
               height: 20px;
