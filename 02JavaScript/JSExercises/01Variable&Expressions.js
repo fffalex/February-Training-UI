@@ -20,7 +20,7 @@ function evenOrOdd (number)
     }
 }
 
-///Write a boolean expression that checks for given integer 
+//2 Write a boolean expression that checks for given integer 
 //if it can be divided (without remainder) by 7 and 5 in the same time.
 function isDividedBySevenAndFive(number)
 {
@@ -40,7 +40,7 @@ function isDividedBySevenAndFive(number)
     }
 }
 
-//Write an expression that calculates rectangle’s area by given width and height
+//3 Write an expression that calculates rectangle’s area by given width and height
 function calculateRectangleArea(width, height)
 {
     if( parseFloat(width) == width && parseFloat(height) == height)
@@ -55,7 +55,7 @@ function calculateRectangleArea(width, height)
     }
 }
 
-//Write an expression that checks for given integer if its third digit 
+//4 Write an expression that checks for given integer if its third digit 
 //(right-to-left) is 7. E. g. 1732  true.
 function isThirdDigitSeven(number)
 {
@@ -70,3 +70,26 @@ function isThirdDigitSeven(number)
     }
     else{return false;}
 }
+
+//5 Write an expression that checks if given positive integer number n (n ≤ 100)
+// is prime. E.g. 37 is prime.
+function isPrime(number)
+{
+    if (parseInt(number) == number)
+    {
+        var flag = 0;
+        number = parseInt(number);
+        for (i=2; i < 100; i++ )
+        {
+            if (number%i == 0)
+            {
+                flag = flag+1;
+            }
+        }
+        if(flag==1)
+        {
+            return true;
+        }else{ return false;}
+    }
+}
+

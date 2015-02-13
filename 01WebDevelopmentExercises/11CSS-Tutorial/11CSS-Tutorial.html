@@ -11,49 +11,70 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <style>
-          html{font-family: Sans-serif; background-color: #EEE}
-          
-            .left-bar {
+          html{font-family: Sans-serif; background-color: #EEE}          
+      
+          #left-bar {
                 float:left;
                 width:25%;
            
             }
           
-          .left-bar ul{
+          #left-bar ul{
             font-size: 12px;
           	list-style-type: none;
           }
           
-          .left-bar li{
+          #left-bar li{
             margin-bottom:3px;
           }
           
-          .left-bar img{
+          #left-bar img{
             width:20px;
           }
-          
+
           .root-item {
             font-weight: bold;
             color: #7b1606;
           } 
             
-            .center-container{}
+            #center-container{
             
-            .right-table{
+            width: 40%;
+            border: 2px solid red;
+            height:20px;
+          }
+            
+            #right-table{  	
                 float:right;
                 width: 25%;
             }
-            
-            .right-table table {
-                
+          
+          	#right-table td p{
+              margin-bottom: 4px;
+			  margin-top: 0px;
+              background-color:#8E8184;
+              color: #FFF;
             }
+            
+            #right-table td {
+            	border: 2px groove #CCC;
+             	text-align:center;
+                margin:2px;
+            }
+
+          	.button-img {
+            	border:1px groove #AAA  ;
+                text-align:center;
+          		width: 30px;
+            	
+          }
             
             
         </style>
     </head>
     <body>
         
-        <div class="left-bar">
+        <div id="left-bar">
           <img src="http://avadhdirectory.com/images/home-icon-png-transparent-4919.png" ><b>HOME</b>
       
             <ul>
@@ -97,10 +118,35 @@ and open the template in the editor.
             </ul>
             
         </div>
-        <div class="center-container">
+      
+        <div id="center-container">
+            <div>
+                <h2>CSS Tutorial</h2>
+                <button>Previous</button><button>Next</button>
+            </div>
+            <div>
+                <h2>C-S Tutorial</h2>
+                <img src="http://www.drr0bin.com/wp-content/uploads/2012/09/counter-strike-global-offensive-cs-go-logo1.jpg">
+                <p>Learn How to Kill All the mother fuckers!</p>
+                <p>Improving you as an individual and helping to lay the foundation for you to eventually progress into a Team atmosphere.</p>
+                <a href="http://css.gamebanana.com/tuts/4464">See more about Counter Strike Tutorial</a>
             
+                <h2>CS Example</h2>
+                <p>Try the new editor and start you to create over 1000 example for us</p>
+                <a href="">Do the work for us totally free now</a>
+                
+                <h2>CSS Renderer</h2>
+                <p></p>
+                
+            </div>
+            <div>
+                
+                
+                
+            </div>
         </div>
-        <div class="right-table">
+      
+        <div id="right-table">
             <table>
                 <tr>
                     <td>
@@ -112,7 +158,7 @@ and open the template in the editor.
                 </tr>
                 <tr>
                     <td>
-                        <img style="width: 30px;" src="http://270c81.medialib.glogster.com/media/8a/8a5009fe9fb51ca81249eae631772d364df410a392c7be44efaabda50c6e3a0b/buttons1.jpg" />
+                      <img class="button-img" src="http://270c81.medialib.glogster.com/media/8a/8a5009fe9fb51ca81249eae631772d364df410a392c7be44efaabda50c6e3a0b/buttons1.jpg" /><br>
                         <a href="http://css3buttongenerator.com/">Dynamic button image generation</a>
                     </td>
                 </tr>
@@ -136,7 +182,7 @@ and open the template in the editor.
                   <td><a href="">I dont know what can i add here</a></td>
                 </tr>
                 <tr>
-                  <td>Be yourself</td>
+                  <td><a href="">Be yourself</a></td>
                 </tr>
             </table>
             
