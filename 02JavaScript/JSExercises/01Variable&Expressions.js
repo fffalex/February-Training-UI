@@ -51,7 +51,7 @@ function calculateRectangleArea(width, height)
     }
     else
     {
-        console.log("Some parameters is incorrect");
+        console.log("Some parameters are incorrect");
     }
 }
 

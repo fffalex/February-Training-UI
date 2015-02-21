@@ -29,15 +29,25 @@ function printAllUndivisible37(number)
 //3 Write a script that finds the max and min number from a sequence of numbers
 function findMaxAndMin(arrayOfNumber)
 {
-    if (typeof(arrayOfNumber) == "Array")
+    if (arrayOfNumber instanceof Array)
     {
         var max = -32000;
         var min = 32000;
         for(var i = 0; i <= arrayOfNumber.length ; i++)
         {
-            for(var j= 0; j<= arrayOfNumber.length; j++)
-                if (i>j);
+            if (arrayOfNumber[i]< min)
+                min = arrayOfNumber[i];
+            if (arrayOfNumber[i]> max)
+                max = arrayOfNumber[i];
         }
+        console.log("Max: "+max+"   Min: "+min);
     }
-    
+    else{ console.log("NO ingresaste array");}
 }
+
+//4. Write a script that finds the lexicographically smallest and largest
+// property in document, window and navigator objects
+
+
+
+

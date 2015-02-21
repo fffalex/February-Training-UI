@@ -22,11 +22,11 @@ function exchangeValuesIfFirstGreater(int1, int2)
 //numbers without calculating it. Use a sequence of if statements.
 function showSignWithoutCalculate(num1,num2,num3)
 {
-    if(parseDouble(num1) == num1 && parseDouble(num2) == num2 && parseDouble(num3) == num3)
+    if(parseFloat(num1) == num1 && parseFloat(num2) == num2 && parseFloat(num3) == num3)
     {
-        num1 = parseDouble(num1);
-        num2 = parseDouble(num2);
-        num3 = parseDouble(num3);
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+        num3 = parseFloat(num3);
         
         // 0?
         if (num1 ==0 || num2 == 0 || num3 == 0)
@@ -126,7 +126,7 @@ function orderDescending(int1,int2,int3)
                 second = int1;
                 third = int3;
             //7 9 8
-            }else if(int2>3){
+            }else if(int2>int3){
                 first = int2;
                 second = int3;
                 third = int1;
@@ -194,15 +194,15 @@ function inputNumber()
 
 //6 Write a script that finds the greatest of given 5 variables
 function whoIsTheGreater(num1,num2,num3,num4,num5){
-    if (parseDouble(num1) == num1 && parseDouble(num2) == num2 &&
-            parseDouble(num3) == num3 && parseDouble(num4) == num4 &&
-            parseDouble(num5) == num5)
+    if (parseFloat(num1) == num1 && parseFloat(num2) == num2 &&
+            parseFloat(num3) == num3 && parseFloat(num4) == num4 &&
+            parseFloat(num5) == num5)
     {
-        num1 = parseDouble(num1);
-        num2 = parseDouble(num2);
-        num3 = parseDouble(num3);
-        num4 = parseDouble(num4);
-        num5 = parseDouble(num5);
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+        num3 = parseFloat(num3);
+        num4 = parseFloat(num4);
+        num5 = parseFloat(num5);
         
         if(num1 > num2 && num1 > num3 && num1> num4 && num1 > num5)
         {
@@ -212,7 +212,7 @@ function whoIsTheGreater(num1,num2,num3,num4,num5){
         {
             return num2;
         }
-        else if(num3 > num1 && num3 > num2 && num3 > num4 && num2 > num5)
+        else if(num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5)
         {
             return num3;
         }
