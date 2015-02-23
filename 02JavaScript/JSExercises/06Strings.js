@@ -128,6 +128,13 @@ function changeTextRegion(text){
 }
 
 //5. Write a function that replaces non breaking white-spaces in a text with &nbsp;
+function replaceNbsp(text){
+    while (text.indexOf(" ") != -1)
+    {
+        text = text.replace(" ","&nbsp");
+    }
+    return text;
+}
 
 //6. Write a function that extracts the content of a html page given as text. 
 //The function should return anything that is in a tag, without the tags:
@@ -307,9 +314,33 @@ function stringFormat(){
     return format;
 }
 
-//12. 
+//12. Write a function that creates a HTML UL using a template for every HTML LI. 
+//The source of the list should an array of elements. Replace all placeholders 
+//marked with –{…}–   with the value of the corresponding property of the object. Example: 
+//<div data-type="template" id="list-item">
+// <strong>-{name}-</strong> <span>-{age}-</span>
+//<div>
+//var people = [{name: "Peter", age: 14},…];
+//var tmpl = document.getElementById("list-item").innerHtml;
+//var peopleList = generateList(people,template);
+//peopleList = "<ul><li><strong>Peter</strong> <span>14</span></li><li>…</li>…</ul>"
+function generateList(people,template){
+    var res = "";
+    res += "<ul>";
+    for (var i = 0; i< people.length; i++){
+        res +="<li>";
+        var aux = template;
+        for(var p in people[i]){
+            aux = aux.replace("-{"+p+"}-", people[i][p]);
+        }
+        res += aux+"</li>";
+    }
+   
+    return res+"</ul>"; 
+}
 
-
+generateList([{name: "Peter", age: 14},{name: "Robert", age: 46}] ,
+"<strong>-{name}-</strong> <span>-{age}-</span>" );
 
 
 

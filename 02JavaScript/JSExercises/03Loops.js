@@ -47,6 +47,33 @@ function findMaxAndMin(arrayOfNumber)
 
 //4. Write a script that finds the lexicographically smallest and largest
 // property in document, window and navigator objects
+function lexicographically()
+{
+    var max = " ";
+    var min = "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ\n\
+    ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ\n\
+    ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ\n\
+    ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+    searchIn('document');
+    searchIn('window');
+    searchIn('navigator');
+    
+    function searchIn(element)
+    {
+        for( var x in element)
+            {
+                if ( x > max )
+                {
+                    max = x;
+                }
+                if (x < min)
+                {
+                    min = x;
+                }
+            }
+        console.log("In "+element +": Largest: "+max.toString()+"  Smallest: "+min.toString());
+    }
+}
 
 
 

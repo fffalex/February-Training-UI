@@ -4,9 +4,62 @@
         <title>First Application</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="FirstApplication.js"></script>
+        <style>
+             
+            #product-list li {
+                list-style-type: none;
+                color: #7b1606;
+            }
+            
+            li:hover {
+                cursor: hand;  
+            }
+            
+            #menu{
+                border: 2px groove #C5C;
+                background-color: #333;
+                color: #FFF;
+                float:left;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #menu>li{
+                color: #FFF;
+                display: inline-block;
+                position:relative;
+            }
+            
+            .block {
+                color: #000;
+                display:none; 
+                position:absolute; 
+                top:30px ;
+                border: 2px groove #AAA;
+                left: 0;
+            }
+            
+            #product-list div{
+                display: none;
+                width: 100px;
+                background: #fff7cf;
+                border: 2px solid #A00;
+                position:absolute;
+                top: 0;
+                left: 50px;
+            }
+            #product-list li{
+                position:relative;
+                width: 20px;
+          
+            }
+            
+            
+        </style>
     </head>
     <body>
+        <br>
+        <!--Table Exercise 1-->
         <div>
             <table id="firstTable">
                 <tr>
@@ -36,5 +89,63 @@
                 </tr>
               </table>
         </div>
+        <br>
+        <!--Inputs Exercise 2-->
+        <div>
+            Name: <input type="text" id="txt-name"> LastName: <input type="text" id="txt-last">
+            <button onclick="showNameHour('txt-name','txt-last')">Click!</button>
+        </div>
+        <br>
+        <!--Leave button exercise 3 -->
+        <div style="float: right; position: absolute">
+            <button onclick="leavePage()">Leave</button></div>
+        <br>
+        <!--tooltips list exercise 5 -->
+        <div>
+            <ul id="product-list">
+                <li>Beer<div>One of the most popular drink</div></li>
+                <li>Wine<div>Useful in the medieval age</div></li>
+                <li>Vodka<div>Necessary if you are a Heavy Metal singer</div></li>
+                <li>Gas Oil<div>Use it when you dont have much money for beers</div></li>
+            </ul>
+        </div>
+        <br>
+        <!--Scrolling text 6 -->
+        <div style="position:relative; widht:50%;border:2px groove #888; height: 15%;">
+            <div id="scroll" style="position:absolute">
+              A scroll is usually divided up into pages, which are sometimes separate sheets of papyrus or parchment glued together at the edges, or may be marked divisions of a continuous roll of writing material. The scroll is usually unrolled so that one page is exposed at a time, for writing or reading, with the remaining pages rolled up to the left and right of the visible page. It is unrolled from side to side, and the text is written in lines from the top to the bottom of the page.
+            </div>
+        </div>
+        <!--Scrolling text 6 -->
+        <br>
+        <div>
+            <ul id="menu">
+                <li>
+                    Menu1<div class="block">
+                        <ul>
+                            <li>Yahoo</li>
+                            <li>Yahuo</li>
+                            <li>Yajahu</li>
+                            <li>Close</li>
+                        </ul>
+                    </div>   
+                </li>
+            
+                <li>
+                    Menu2<div class="block">
+                        <ul>
+                            <li>Yahoo</li>
+                            <li>Yahuo</li>
+                            <li>Yajahu</li>
+                            <li>Close</li>
+                        </ul>
+                    </div>   
+                </li>
+        </ul>
+        </div>
+        
+        
+        
+        <script src="FirstApplication.js"></script>
     </body>
 </html>
