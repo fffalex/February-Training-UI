@@ -1,5 +1,4 @@
 //1.Write a JavaScript function reverses string and returns itExample: "sample"  "elpmas".
-
 function reverseString(string){
         var reverse = "";
         string = string.toString();
@@ -238,6 +237,80 @@ function replaceAByUrl(html){
     }
     return html;
 }
+
+//9. Write a function for extracting all email addresses from given text. 
+//All substrings that match the format <identifier>@<host>…<domain> should be recognized as emails. 
+//Return the emails as array of strings.
+
+function extractEmails(text){
+    var textArray = text.split(" ");
+    var emails = [];
+    var n = -1;
+    for (var i = 0; i<textArray.length; i++)
+    {
+        n = textArray[i].indexOf("@");
+        if (n != -1)
+        {
+            if (textArray[i].indexOf(".") != -1)
+            {
+                 emails.push(textArray[i]);
+            }
+        }
+    }
+    return emails;
+}
+
+//10. Write a program that extracts from a given text all palindromes, 
+//e.g. "ABBA", "lamal", "exe".
+
+function extractPalindromes(text){
+    var textArray = text.split(" ");
+    var palindromes = [];
+    var n = -1;
+    for (var i = 0; i<textArray.length; i++)
+    {
+       if (textArray[i] == reverseString(textArray[i]))
+       {
+           palindromes.push(textArray[i]);
+       }
+    }
+    return palindromes;
+    
+    function reverseString(string){
+        var reverse = "";
+        for (var i = string.length-1; i >= 0 ;i--)
+        {
+            reverse += string[i]; 
+        }
+        return reverse;
+    }
+}
+
+//11. Write a function that formats a string using placeholders
+function stringFormat(){
+    var format = arguments[0];
+    var place;
+    
+    for (var i= 1; i<arguments.length; i++)
+    {
+        place = "{"+(i-1)+"}";
+        var flag = false;
+        while(flag == false){
+            if(format.indexOf(place) != -1){
+                format = format.replace(place,arguments[i]);
+            }
+            else{
+                flag=true;
+            }
+        } 
+    }
+    return format;
+}
+
+//12. 
+
+
+
 
 
 
