@@ -52,3 +52,14 @@ for (var i = 0; i< 5; i++)
     list.append('<li>NEW Item '+i+8+'</li>');
 }
 //13. Remove the odd list items
+$('#myList li:odd').remove();
+
+//14. Add another h2 and another paragraph to the last div.module
+$('div.module').append('<h2>New H2</h2>','<p>this is a new paragraph</p>');
+
+//15. Add another option to the select element. Give the option the value "Wednesday"
+$('select').first().append($('<option>', {value: "Wednesday", text: 'NEW'}));
+
+//16. Add a new div.module to the page after the last one 
+//Put a copy of one of the existing images inside of it
+$('<div></div>').addClass('module').append($('img').first()).insertAfter($('div').last());
