@@ -1,0 +1,26 @@
+[
+    {
+        "id": 4,
+        "name": "admin",
+        "pass": "admin",
+        "mail": "casaperro@hotmail",
+        "fullName": "Rodolfo Casa Perro",
+        "isAdmin": false
+    },
+    {
+        "id": 1,
+        "name": "alexander",
+        "pass": "adminadmin",
+        "mail": "tupendex@hotmail",
+        "fullName": "Alexander Javier Rodolfo Alberto Dedek",
+        "isAdmin": true
+    },
+    {
+        "id": 2,
+        "name": "rodolfo",
+        "pass": "asdasd",
+        "mail": "casaperro@hotmail",
+        "fullName": "Rodolfo Casa Perro",
+        "isAdmin": false
+    }
+]

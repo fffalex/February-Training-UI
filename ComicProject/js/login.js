@@ -1,20 +1,4 @@
-
-//var json = require('../data/users.json');
-require(['json!users.json'], function(data){
-  console.log(data);
-})
-//console.log(json);
-localStorage["user1"] = "asdasd";
-localStorage["admin"] = "admin";
-
- function readUserFromJson() {
-            $.getJSON("../data/users.json", function(user) {
-                $.each(user["name"], function(primo) {
-                    
-                });
-            });
-        }
-
+//
 $(function(){
     var name = $("#name");
     name.keyup(checkLength(name));

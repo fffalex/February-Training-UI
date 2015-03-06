@@ -5,10 +5,12 @@
 // Their usage will become more apparent futher along in the tutorial.
 require.config({
   paths: {
-    jquery: 'libs/jquery/jquery-min',
-    underscore: 'libs/underscore/underscore-min',
-    backbone: 'libs/backbone/backbone-min',
-    templates: '../templates'
+    jquery: 'libs/jquery.min',
+    underscore: 'libs/underscore-1.8.2',
+    backbone: 'libs/backbone',
+    templates: '../templates',
+    localstorage: 'libs/backbone.localStorage'
+    
   }
 
 });
