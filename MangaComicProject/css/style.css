@@ -19,7 +19,7 @@ div#log-box{
     margin:10%;
 }
 
-#tittle-bar,#footer-bar{
+#tittle-bar, #header{
     background-color: rgba(3, 3, 3, 0.85);
     margin-top: 10px;
     border: 1px #777 solid;
@@ -27,14 +27,26 @@ div#log-box{
     box-shadow: 0px 5px 10px 5px #333;
 }
 
-#tittle-bar img,#footer-bar img{
-    padding:10px;
-    height: 100px; 
+#header{
+   padding: 5px;
+   box-shadow: 0px 5px 10px 5px #333;
+   margin-bottom: 10px;
 }
 
+#tittle-bar img{
+    padding:10px;
+    height: 85px; 
+}
+
+#alphacomic{
+    width: 20%;
+    position: absolute;
+    float: left;
+    z-index: 5;
+}
 body {
     margin:2%;
-    background-image: url("../imgs/site/manga-bg.jpg");
+    background-image: url("../imgs/site/manga-bg.png");
 }
 
 ///-----------LOGIN BOX CSS
@@ -43,6 +55,7 @@ body {
     padding: 25px;
     position: fixed;
 }
+
 #login-container button{
     background-color: #7A0707;
     border-color: #AAA;
@@ -79,6 +92,7 @@ body {
 ///User Panel
 .navbar-login
 {
+    background-color: rgba(3,3,3,0.8);
     width: 305px;
     padding: 10px;
     padding-bottom: 0px;
@@ -86,6 +100,7 @@ body {
 
 .navbar-login-session
 {
+    width: 300px;
     padding: 10px;
     padding-bottom: 0px;
     padding-top: 0px;
@@ -94,4 +109,203 @@ body {
 .icon-size
 {
     font-size: 87px;
+}
+
+//HEADER SECTION
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 50vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 50vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    text-shadow: 10px 10px 5px #111;
+    opacity: 1;
+    font-size: 4em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .2;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 75vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url('../imgs/site/carousel/evangelion.jpg'); 
+  background-position: center;
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url('../imgs/site/carousel/mangacollection.jpg');
+  background-position: center; 
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url('../imgs/site/carousel/onepiecechacarter.png');
+}
+
+///FOOOTER SECTION---
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background: 
+  /* color overlay */ 
+    linear-gradient(
+      rgba(240, 212, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* image to overlay */
+    url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+}
+
+
+/* Custom footer CSS
+-------------------------------------------------- */
+#footer-bar{
+     background-image: url('../imgs/site/mangapokemonred.jpg');
+}
+
+#footer .container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+#footer .container .text-muted {
+  margin: 20px 0;
+}
+#footer .footertext {
+  color: #000;
+}
+///SOCIAL BUTTONS
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo|openwebicons|zocial);
+.social-login-btn {
+  margin: 5px;
+  width: 20%;
+  font-size: 250%;
+  padding: 0;
+}
+.social-twitter {
+  background-color: #1daee3;
+  border-color: #3997ba;
+}
+.social-twitter:hover {
+  background-color: #3997ba;
+  border-color: #347b95;
+}
+.social-facebook {
+  background-color: #4c699e;
+  border-color: #47618d;
+}
+.social-facebook:hover {
+  background-color: #47618d;
+  border-color: #3c5173;
+}
+
+.social-google {
+  background-color: #da573b;
+  border-color: #be5238;
+}
+.social-google:hover{
+  background-color: #be5238;
+  border-color: #9b4631;
+}
+
+.wrapper {
+margin-left: auto;
+margin-right: auto;
+max-width: 980px;
+min-width: 960px;
+width: 980px;
+}
+
+.icon-nintendo {
+display: block;
+height: 30px;
+margin: 30px auto;
+text-decoration: none;
+text-indent: -99999em;
+width: 120px;
+}
+.footer-links{
+border: 0;
+font: inherit;
+font-size: 100%;
+margin: 0;
+padding: 0;
+vertical-align: baseline;
 }
