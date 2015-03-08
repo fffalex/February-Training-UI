@@ -8,9 +8,10 @@ define([
     'views/HomeView',
     'views/HeaderView',
     'views/NavbarView',
-    'views/PageBodyComicsView'
+    'views/PageBodyComicsView',
+    'views/SidebarView'
 
-], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView, PageBodyComicsView) {
+], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView, PageBodyComicsView,SidebarView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -28,8 +29,6 @@ define([
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
             } else {
-//            var homeView = new HomeView;
-//            homeView.render();
                 //Create the new views with the data associated
                 var headerView = new HeaderView;
                 headerView.render();
@@ -37,6 +36,8 @@ define([
                 navbarView.render();
                 var pageBodyComicsView = new PageBodyComicsView;
                 pageBodyComicsView.render();
+                var sidebarView = new SidebarView;
+                sidebarView.render();
             }
         });
 

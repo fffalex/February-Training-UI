@@ -5,7 +5,8 @@
         "description": "It a very fucking shet this manga sucks",
         "genre": "novel",
         "characters": "Rodolfo Casa Perro",
-        "qualification": 8
+        "qualification": 8,
+        "img": "/imgs/site/characters1.jpg" 
     },
     {
         "id": 2,
@@ -13,6 +14,51 @@
         "description": "The bes of the best",
         "genre": "fight",
         "characters": "Rodolfo Casa Perro",
-        "qualification": 9
+        "qualification": 9,
+        "img": "../imgs/site/narutomanga.png" 
+    },
+      {
+        "id": 3,
+        "tittle": "Naruto Shippuden",
+        "description": "It a very fucking shet this manga sucks",
+        "genre": "novel",
+        "characters": "Rodolfo Casa Perro",
+        "qualification": 8,
+        "img": "/imgs/site/characters1.jpg" 
+    },
+      {
+        "id": 4,
+        "tittle": "Naruto Shippuden",
+        "description": "It a very fucking shet this manga sucks",
+        "genre": "novel",
+        "characters": "Rodolfo Casa Perro",
+        "qualification": 8,
+        "img": "/imgs/site/characters1.jpg" 
+    },
+      {
+        "id": 5,
+        "tittle": "Naruto Shippuden",
+        "description": "It a very fucking shet this manga sucks",
+        "genre": "novel",
+        "characters": "Rodolfo Casa Perro",
+        "qualification": 8,
+        "img": "/imgs/site/characters1.jpg" 
+    },
+      {
+        "id": 6,
+        "tittle": "Naruto Shippuden",
+        "description": "It a very fucking shet this manga sucks",
+        "genre": "novel",
+        "characters": "Rodolfo Casa Perro",
+        "qualification": 8,
+        "img": "/imgs/site/characters1.jpg" 
+    },  {
+        "id": 7,
+        "tittle": "Naruto Shippuden",
+        "description": "It a very fucking shet this manga sucks",
+        "genre": "novel",
+        "characters": "Rodolfo Casa Perro",
+        "qualification": 8,
+        "img": "/imgs/site/characters1.jpg" 
     }
 ]

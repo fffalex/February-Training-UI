@@ -10,7 +10,8 @@ define([
             description: "",
             genre: "",
             characters: "",
-            qualification: "",  
+            qualification: "",
+            img: ""
         }
     });
 

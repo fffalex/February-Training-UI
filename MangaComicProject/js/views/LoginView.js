@@ -41,8 +41,7 @@ define([
             var compiledTemplate = _.template(this.template)({name: "Robert"});
             var compiledTemplate = _.template(this.template);
             this.$el.html(this.template);
-        }
-
+        },
     });
 
     return LoginView;
