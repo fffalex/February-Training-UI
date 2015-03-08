@@ -13,6 +13,10 @@ define([
         },
         events: {
             "click #logout": "logout",
+            "click #news": "newsPage"
+        },
+        newsPage: function(){
+            location.hash = 'news';
         },
         logout:function(){
             var loginService = new LoginService;

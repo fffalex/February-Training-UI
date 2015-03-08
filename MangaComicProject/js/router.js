@@ -9,22 +9,32 @@ define([
     'views/HeaderView',
     'views/NavbarView',
     'views/PageBodyComicsView',
-    'views/SidebarView'
+    'views/SidebarView',
+    'views/NewsView'
 
-], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView, PageBodyComicsView,SidebarView) {
+], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView,
+PageBodyComicsView,SidebarView,NewsView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
             // Define some URL routes
             'home': 'showStaticMain',
+            'news': 'showNewsPage',
             // Default
             '*actions': 'defaultAction'
         }
     });
 
     var initialize = function () {
-
+        //CREATE NEW ROUTER
         var app_router = new AppRouter;
+      
+        app_router.on('route:showNewsPage', function () {
+           var newsView = new NewsView;
+           newsView.render();
+        });
+
+       
         app_router.on('route:showStaticMain', function () {
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});

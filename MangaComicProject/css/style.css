@@ -19,7 +19,7 @@ div#log-box{
     margin:10%;
 }
 
-#tittle-bar, #header{
+#adobe-cont{
     background-color: rgba(3, 3, 3, 0.85);
     margin-top: 10px;
     border: 1px #777 solid;
@@ -27,11 +27,23 @@ div#log-box{
     box-shadow: 0px 5px 10px 5px #333;
 }
 
+#tittle-bar, #header, #accordion{
+    background-color: rgba(3, 3, 3, 0.85);
+    margin-top: 10px;
+    border: 1px #777 solid;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 5px #333;
+}
+#accordion, #adobe-cont{
+    padding:5px;
+}
+
 #header{
    padding: 5px;
    box-shadow: 0px 5px 10px 5px #333;
    margin-bottom: 10px;
 }
+
 
 #tittle-bar img{
     padding:10px;
@@ -213,6 +225,7 @@ body {
 }
 .fade-carousel .slides .slide-3 {
   background-image: url('../imgs/site/carousel/onepiecechacarter.png');
+  background-position: center; 
 }
 
 ///FOOOTER SECTION---
