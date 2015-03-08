@@ -1,30 +1,32 @@
 define([
-  'jquery',
-  'underscore',
-  'backbone',
-  'globals',
-  'text!templates/HomeTemplate.html'
-], function($, _, Backbone, globals,HomeTemplate){
+    'jquery',
+    'underscore',
+    'backbone',
+    'globals',
+    'text!templates/HomeTemplate.html'
+], function ($, _, Backbone, globals, HomeTemplate) {
 
-  var HomeView = Backbone.View.extend({
-    el: $("#container"),
-    template: HomeTemplate,
-    initialize: function() {},
-    // Se asignan eventos a los botones anterior y siguiente para permitir visualizar libros
-   
-    render: function(){
-    var user1 = globals.userRepository.first().toJSON();
-    
+    var HomeView = Backbone.View.extend({
+        el: $("#container"),
+        template: HomeTemplate,
+        initialize: function () {
+        },
+        render: function () {
+            var collection = globals.comicRepository;
+            
 
-      //var compiledTemplate = _.template( this.template)({name: "Robert"});
-      var compiledTemplate = _.template( this.template)(user1);
-      this.$el.html(compiledTemplate);
-    }
+            //var compiledTemplate = _.template( this.template)({name: "Robert"});
+            var compiledTemplate = _.template(this.template)({comics: collection.models});
+//            var compiledTemplate = _.template(this.template)([{tittle: "naruto shipudden", description:"Its a fucking comic"},
+//            {tittle: "naruto shipudden 22", description:"Its a fucking comic 2222"}]);
+            this.$el.html(compiledTemplate);
 
-  });
+        }
 
-  return HomeView;
-  
+    });
+
+    return HomeView;
+
 });
 
 

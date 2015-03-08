@@ -3,17 +3,16 @@ define([
     'backbone'
 ], function (_, Backbone) {
 
-    var ComicModel = Backbone.Model.extend({
+    var NewModel = Backbone.Model.extend({
     defaults: {
             id: 0,
             tittle: "",
             description: "",
-            genre: "",
-            characters: "",
-            qualification: "",  
+            summary: "",
+            img: "",
         }
     });
 
-    return UserModel;
+    return NewModel;
 
 });

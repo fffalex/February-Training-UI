@@ -6,17 +6,12 @@ define([
   'router',
   'globals',
   'collections/UserCollection',
-  'models/SessionModel'
-], function($, _, Backbone, Router, globals, UserCollection, SessionModel){
-  var initialize = function(){
-//    
-//    globals.userRepository = new UserCollection;
-//    globals.userRepository.fetch({async:false});
-//    globals.session = new SessionModel;
-    
+  'models/SessionModel',
+  'collections/ComicCollection',
+  'collections/NewCollection'
+], function($, _, Backbone, Router, globals, UserCollection, SessionModel, ComicCollection,NewCollection){
+  var initialize = function(){    
     var needJSON=false;
-
-    
     //set new method (JSON to LOCALSTORAGE)
     Backbone.Collection.prototype.save=function(success){
       if(this.localStorage){
@@ -33,6 +28,16 @@ define([
     needJSON=(localStorage.getItem("userRepository") === null);
     globals.userRepository.fetch({async:false,ajaxSync:needJSON});
     if(needJSON)globals.userRepository.save();
+    
+    globals.comicRepository = new ComicCollection;
+    needJSON=(localStorage.getItem("comicRepository") === null);
+    globals.comicRepository.fetch({async:false,ajaxSync:needJSON});
+    if(needJSON)globals.comicRepository.save();
+    
+    globals.newRepository = new NewCollection;
+    needJSON=(localStorage.getItem("newRepository") === null);
+    globals.newRepository.fetch({async:false,ajaxSync:needJSON});
+    if(needJSON)globals.newRepository.save();
     
     globals.session = new SessionModel;
     globals.session.fetch({async:false});

@@ -20,6 +20,24 @@ define([
             this.set("user", user);
             this.set("connected", true);
             this.save();
+        },
+        disconnect: function(){
+            this.set("connected", false);
+            this.set("user", new UserModel);
+        },
+        getUserData: function(){
+            //Devuelvo datos interesantes para la session
+            var user = this.get("user");
+            var role;
+            if(user.isAdmin)
+                role = "Administrator";
+            else
+                role= "Basic User";
+            return {
+                fullname: user.fullname,
+                mail: user.mail,
+                isAdmin: role
+            }
         }
     });
 

@@ -2,17 +2,17 @@ define([
   'underscore',
   'backbone',
   'localstorage',
-  'models/UserModel'
-], function(_, Backbone, LocalStorage, ComicModel){
+  'models/NewModel'
+], function(_, Backbone, LocalStorage, NewModel){
 
   var UserCollection = Backbone.Collection.extend({
       
-      model: ComicModel,
+      model: NewModel,
 
       initialize : function(models, options) {},
-      url : "data/comicsData.json",
+      url : "data/newData.json",
       //set Backbone localStorage. Map json data to localStorage
-      localStorage: new Backbone.LocalStorage("comicRepository"),
+      localStorage: new Backbone.LocalStorage("newRepository"),
       
   });
 

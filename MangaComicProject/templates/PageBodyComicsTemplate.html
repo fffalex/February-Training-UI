@@ -1,0 +1,28 @@
+<div class="row clearfix">
+    <div class="col-md-8 column">
+        <div id="page">
+            <div class="row">
+                <% _.each(comics, function(comic){ %>
+                <div class="col-xs-6 col-md-3">
+                    <a href="#" class="thumbnail" data-toggle="tooltip" data-placement="right" title="<%= comic.get('description')%>">
+                        <img src="../imgs/site/narutomanga.png" alt=""/>
+                        <h6><%= comic.get('tittle')%></h6>
+                    </a>
+                </div>
+                <% }); %>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="col-md-4 column">
+        <div id="sidebar">
+            SIDEBAR
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>

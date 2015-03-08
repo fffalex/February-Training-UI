@@ -12,7 +12,9 @@ define([
             return true;
         }
     },
-    performLogOut: function(){}
+    performLogout: function(){
+         globals.session.disconnect();
+    }
 });
     return LoginService;
 });

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "tittle": "Evangelion Complete!",
+        "description": "",
+        "summary": "See over the saga",
+        "img": ""
+    },
+    {
+        "id": 1,
+        "tittle": "New Comic Shop",
+        "description": "",
+        "summary": "Buy any manga doujinshi here",
+        "img": ""
+    },
+    {
+        "id": 2,
+        "tittle": "New Character Revealed",
+        "description": "",
+        "summary": "See the new character. Meet Lucy!",
+        "img": ""
+    }
+]

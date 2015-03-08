@@ -4,7 +4,7 @@
         "name": "admin",
         "pass": "admin",
         "mail": "casaperro@hotmail",
-        "fullName": "Rodolfo Casa Perro",
+        "fullname": "Rodolfo Casa Perro",
         "isAdmin": false
     },
     {
@@ -12,7 +12,7 @@
         "name": "alexander",
         "pass": "adminadmin",
         "mail": "tupendex@hotmail",
-        "fullName": "Alexander Javier Rodolfo Alberto Dedek",
+        "fullname": "Alexander Javier Rodolfo Alberto Dedek",
         "isAdmin": true
     },
     {
@@ -20,7 +20,7 @@
         "name": "rodolfo",
         "pass": "asdasd",
         "mail": "casaperro@hotmail",
-        "fullName": "Rodolfo Casa Perro",
+        "fullname": "Rodolfo Casa Perro",
         "isAdmin": false
     }
 ]
