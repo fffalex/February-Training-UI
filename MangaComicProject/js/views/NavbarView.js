@@ -13,7 +13,11 @@ define([
         },
         events: {
             "click #logout": "logout",
-            "click #news": "newsPage"
+            "click #news": "newsPage",
+            "click #genres": "showGenres"
+        },
+        showGenres: function(){
+             location.hash = 'genres';
         },
         newsPage: function(){
             location.hash = 'news';

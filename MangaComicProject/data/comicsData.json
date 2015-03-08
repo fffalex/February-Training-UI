@@ -1,63 +1,63 @@
 [
     {
         "id": 1,
-        "tittle": "Naruto Shippuden",
-        "description": "It a very fucking shet this manga sucks",
-        "genre": "novel",
-        "characters": "Rodolfo Casa Perro",
+        "tittle": "Fairy Tail",
+        "description": "THE WICKED SIDE OF WIZARDRY Cute girl wizard Marle wants to join the Fairy Tail, a club for the most powerful wizards.",
+        "genre": "Action",
+        "characters": "",
         "qualification": 8,
         "img": "/imgs/site/characters1.jpg" 
     },
     {
         "id": 2,
-        "tittle": "Pokemon",
-        "description": "The bes of the best",
-        "genre": "fight",
+        "tittle": "One Piece",
+        "description": "The series begins with the execution of Gol D. Roger, a man known as the King of the Pirates (海賊王 Kaizokuō?). Just before his death, Roger announces that his treasure, the One Piece (ひとつなぎの大秘宝 (ワンピース) Wan Pīsu?).",
+        "genre": "Comedy",
         "characters": "Rodolfo Casa Perro",
         "qualification": 9,
         "img": "../imgs/site/narutomanga.png" 
     },
       {
         "id": 3,
-        "tittle": "Naruto Shippuden",
-        "description": "It a very fucking shet this manga sucks",
-        "genre": "novel",
-        "characters": "Rodolfo Casa Perro",
+        "tittle": "Bleach",
+        "description": " Bleach follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper.",
+        "genre": "Action",
+        "characters": "",
         "qualification": 8,
         "img": "/imgs/site/characters1.jpg" 
     },
       {
         "id": 4,
-        "tittle": "Naruto Shippuden",
-        "description": "It a very fucking shet this manga sucks",
-        "genre": "novel",
+        "tittle": "World Trigger",
+        "description": "Is a Japanese manga series written and illustrated by Daisuke Ashihara, and serialized in Weekly Shōnen Jump since February 2013.",
+        "genre": "Sci-Fi",
         "characters": "Rodolfo Casa Perro",
         "qualification": 8,
         "img": "/imgs/site/characters1.jpg" 
     },
       {
         "id": 5,
-        "tittle": "Naruto Shippuden",
-        "description": "It a very fucking shet this manga sucks",
-        "genre": "novel",
+        "tittle": "Eyeshield 21",
+        "description": "Revolves around a weak, unassertive boy named Sena Kobayakawa who enters the high school of his choice—Deimon Private Senior High School.",
+        "genre": "Sport",
         "characters": "Rodolfo Casa Perro",
         "qualification": 8,
         "img": "/imgs/site/characters1.jpg" 
     },
       {
         "id": 6,
-        "tittle": "Naruto Shippuden",
-        "description": "It a very fucking shet this manga sucks",
-        "genre": "novel",
-        "characters": "Rodolfo Casa Perro",
+        "tittle": "Apocalypse no Toride",
+        "description": "The Straw Hat Pirates make their way to Alabasta, leading to battles with Baroque Works and their leader, Sir Hasano. ",
+        "genre": "Horror",
+        "characters": "",
         "qualification": 8,
         "img": "/imgs/site/characters1.jpg" 
     },  {
         "id": 7,
-        "tittle": "Naruto Shippuden",
-        "description": "It a very fucking shet this manga sucks",
-        "genre": "novel",
-        "characters": "Rodolfo Casa Perro",
+        "tittle": "Gantz",
+        "description": "Gantz tells the story of Kei Kurono and his friend Masaru Kato who die in a train accident and become part of a semi-posthumous game.",
+        "genre": "Sci-Fi",
+        "characters": "",
         "qualification": 8,
         "img": "/imgs/site/characters1.jpg" 
     }

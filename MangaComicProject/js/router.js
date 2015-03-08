@@ -10,16 +10,18 @@ define([
     'views/NavbarView',
     'views/PageBodyComicsView',
     'views/SidebarView',
-    'views/NewsView'
+    'views/NewsView',
+    'views/GenreView'
 
 ], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView,
-PageBodyComicsView,SidebarView,NewsView) {
+        PageBodyComicsView, SidebarView, NewsView, GenreView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
             // Define some URL routes
             'home': 'showStaticMain',
             'news': 'showNewsPage',
+            'genres': 'showGenres',
             // Default
             '*actions': 'defaultAction'
         }
@@ -28,13 +30,26 @@ PageBodyComicsView,SidebarView,NewsView) {
     var initialize = function () {
         //CREATE NEW ROUTER
         var app_router = new AppRouter;
-      
+
         app_router.on('route:showNewsPage', function () {
-           var newsView = new NewsView;
-           newsView.render();
+            if (!globals.session.isConnected()) {
+                app_router.navigate('login', {trigger: true});
+            } else {
+                var newsView = new NewsView;
+                newsView.render();
+            }
         });
 
-       
+        app_router.on('route:showGenres', function () {
+            if (!globals.session.isConnected()) {
+                app_router.navigate('login', {trigger: true});
+            } else {
+                var genreView = new GenreView;
+                genreView.render();
+            }
+        });
+
+
         app_router.on('route:showStaticMain', function () {
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
