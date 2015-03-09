@@ -11,10 +11,11 @@ define([
     'views/PageBodyComicsView',
     'views/SidebarView',
     'views/NewsView',
-    'views/GenreView'
+    'views/GenreView',
+    'views/BorrowView'
 
 ], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView,
-        PageBodyComicsView, SidebarView, NewsView, GenreView) {
+        PageBodyComicsView, SidebarView, NewsView, GenreView, BorrowView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -22,6 +23,7 @@ define([
             'home': 'showStaticMain',
             'news': 'showNewsPage',
             'genres': 'showGenres',
+            'borrow': 'showBorrows',
             // Default
             '*actions': 'defaultAction'
         }
@@ -30,6 +32,15 @@ define([
     var initialize = function () {
         //CREATE NEW ROUTER
         var app_router = new AppRouter;
+
+        app_router.on('route:showBorrows', function () {
+            if (!globals.session.isConnected()) {
+                app_router.navigate('login', {trigger: true});
+            } else {
+                var borrowView = new BorrowView;
+                borrowView.render();
+            }
+        });
 
         app_router.on('route:showNewsPage', function () {
             if (!globals.session.isConnected()) {
@@ -53,16 +64,9 @@ define([
         app_router.on('route:showStaticMain', function () {
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
-            } else {
-                //Create the new views with the data associated
-                var headerView = new HeaderView;
-                headerView.render();
-                var navbarView = new NavbarView;
-                navbarView.render();
+            } else { 
                 var pageBodyComicsView = new PageBodyComicsView;
                 pageBodyComicsView.render();
-                var sidebarView = new SidebarView;
-                sidebarView.render();
             }
         });
 
@@ -74,8 +78,11 @@ define([
                 app_router.navigate('home', {trigger: true});
             }
         });
-
-
+        
+        //STATIC IN ALL PAGES
+        var homeView = new HomeView;
+        homeView.checkSession();
+    
 
         // Unlike the above, we don't call render on this view as it will handle
         // the render call internally after it loads data. Further more we load it

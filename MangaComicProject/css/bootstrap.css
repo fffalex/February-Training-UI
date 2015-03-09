@@ -1107,6 +1107,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  /* width: 2px; */
 }
 .img-responsive,
 .thumbnail > img,

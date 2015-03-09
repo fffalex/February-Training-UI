@@ -6,7 +6,7 @@ define([
     'text!templates/GenreTemplate.html'
 ], function ($, _, Backbone, globals, GenreTemplate) {
     var GenreView = Backbone.View.extend({
-        el: $("#page"),
+        el: "#page",
         template: GenreTemplate,
         initialize: function () {
         },
@@ -16,7 +16,6 @@ define([
             this.$el.html(compiledTemplate);
         }
     });
-
     return GenreView;
 
 });

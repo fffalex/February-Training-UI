@@ -2,22 +2,22 @@
     {
         "id": 0,
         "tittle": "Evangelion Complete!",
-        "description": "",
-        "summary": "See over the saga",
-        "img": ""
+        "description": "Yoshiyuki Sadamoto, who provided the original character designs for Neon Genesis Evangelion, began telling a slightly alternate version of the story in a manga series in November 1994, 11 months before the anime hit TV. That manga is finally getting ready to wind down. Material for the series' 12th volume has recently been completed with Young Ace's premiere of chapter 90 or stage. With that, publisher Kadokawa has confirmed that Sadamoto's Evangelion has one more volume to go before the series is finally wrapped up.",
+        "summary": "The end of saga announced",
+        "img": "imgs/site/carousel/evangelion.jpg"
     },
     {
         "id": 1,
-        "tittle": "New Comic Shop",
-        "description": "",
-        "summary": "Buy any manga doujinshi here",
-        "img": ""
+        "tittle": "New Fan Comic Shop",
+        "description": "Print may be dead or dying, but graphic novels continue to thrive. With the surge in popularity of comic books and their blockbuster adaptations, shops have sprung up everywhere, from the small stores to massive outfits. Here's where to get your graphic fix.",
+        "summary": "Buy any manga and doujinshi here!",
+        "img": "imgs/site/carousel/mangacollection.jpg"
     },
     {
         "id": 2,
         "tittle": "New Character Revealed",
-        "description": "",
+        "description": "Is being introduced in April, alongside a new feature called Shadows. Sounding similar in practice to Forza's Drivatars, the mode reads the way you fight and uploads a virtual version of yourself for other players to battle.",
         "summary": "See the new character. Meet Lucy!",
-        "img": ""
+        "img": "imgs/site/carousel/onepiecechacarter.png"
     }
 ]

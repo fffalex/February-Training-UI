@@ -1,7 +1,8 @@
 define([
     'underscore',
-    'backbone'
-], function (_, Backbone) {
+    'backbone',
+    'collections/comicCollection'
+], function (_, Backbone, ComicCollection) {
 
     var UserModel = Backbone.Model.extend({
     defaults: {
@@ -10,7 +11,9 @@ define([
             pass: "",
             mail: "",
             fullname: "",
-            isAdmin: false
+            isAdmin: false,
+            photo: "",
+            borrowed: ComicCollection
         }
     });
 

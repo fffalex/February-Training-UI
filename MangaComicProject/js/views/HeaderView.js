@@ -7,7 +7,7 @@ define([
 ], function ($, _, Backbone, globals, HeaderTemplate) {
 
     var HeaderView = Backbone.View.extend({
-        el: $("#header"),
+        el: "#header",
         template: HeaderTemplate,
         initialize: function () {
         },

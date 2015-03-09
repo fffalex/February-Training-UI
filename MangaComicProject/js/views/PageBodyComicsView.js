@@ -6,7 +6,7 @@ define([
     'text!templates/PageBodyComicsTemplate.html'
 ], function ($, _, Backbone, globals, PageBodyComicsTemplate) {
     var PageBodyComicsView = Backbone.View.extend({
-        el: $("#page"),
+        el: "#page",
         template: PageBodyComicsTemplate,
         initialize: function () {
         },
@@ -15,6 +15,10 @@ define([
 
             var compiledTemplate = _.template(this.template)({comics: collection.models});
             this.$el.html(compiledTemplate);
+            
+            $(function () {
+                $("[data-toggle='tooltip']").tooltip();
+            });
         }
     });
 

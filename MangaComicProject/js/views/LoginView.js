@@ -37,7 +37,6 @@ define([
 
         },
         render: function () {
-            console.log(this.template);
             var compiledTemplate = _.template(this.template)({name: "Robert"});
             var compiledTemplate = _.template(this.template);
             this.$el.html(this.template);

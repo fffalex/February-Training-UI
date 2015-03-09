@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 jumbotron">
             <div class="panel-group" id="genres-accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                <span class="glyphicon glyphicon-star">
-                                </span>Action</a>
+                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseOne1">
+                                <span class="glyphicon glyphicon-screenshot">
+                                </span> Action</a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse in">
+                    <div id="collapseOne1" class="panel-collapse collapse in">
                         <div class="panel-body">
                             <table class="table">
 
@@ -18,7 +18,7 @@
                                 <% _.each(comics, function(comic){ if(comic.get('genre')=="Action"){%> 
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }}); %>
@@ -29,18 +29,18 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseTwo"><span class="glyphicon glyphicon-zoom-in">
+                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseTwo1"><span class="glyphicon glyphicon-eye-open">
                                 </span>Horror</a>
                         </h4>
                     </div>
-                    <div id="collapseTwo" class="panel-collapse collapse">
+                    <div id="collapseTwo1" class="panel-collapse collapse">
                         <div class="panel-body">
                             <table class="table">
 
                                 <% _.each(comics, function(comic){ if(comic.get('genre')=="Horror"){%>                              
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }}); %>
@@ -51,18 +51,18 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseThree"><span class="glyphicon glyphicon-thumbs-up">
-                                </span>Sci-Fi</a>
+                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseThree1"><span class="glyphicon glyphicon-camera">
+                                </span> Sci-Fi</a>
                         </h4>
                     </div>
-                    <div id="collapseThree" class="panel-collapse collapse">
+                    <div id="collapseThree1" class="panel-collapse collapse">
                         <div class="panel-body">
                             <table class="table">
 
                                 <% _.each(comics, function(comic){ if(comic.get('genre')=="Sci-Fi"){%> 
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }}); %>
@@ -73,8 +73,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseFour"><span class="glyphicon glyphicon-thumbs-up">
-                                </span>Comedy</a>
+                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseFour"><span class="glyphicon glyphicon-piggy-bank">
+                                </span> Comedy</a>
                         </h4>
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse">
@@ -84,7 +84,7 @@
                                 <% _.each(comics, function(comic){ if(comic.get('genre')=="Comedy"){%> 
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }}); %>
@@ -95,8 +95,8 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseFive"><span class="glyphicon glyphicon-thumbs-up">
-                                </span>Sport</a>
+                            <a data-toggle="collapse" data-parent="#genres-accordion" href="#collapseFive"><span class="glyphicon glyphicon-play-circle">
+                                </span> Sport</a>
                         </h4>
                     </div>
                     <div id="collapseFive" class="panel-collapse collapse">
@@ -106,7 +106,7 @@
                                 <% _.each(comics, function(comic){ if(comic.get('genre')=="Sport"){%> 
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }}); %>

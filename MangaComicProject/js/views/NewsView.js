@@ -7,7 +7,7 @@ define([
 ], function ($, _, Backbone, globals, NewsTemplate) {
 
     var NewsView = Backbone.View.extend({
-        el: $("#page"),
+        el: "#page",
         template: NewsTemplate,
         initialize: function () {
         },

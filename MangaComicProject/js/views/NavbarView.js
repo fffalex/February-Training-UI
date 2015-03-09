@@ -7,16 +7,20 @@ define([
     'models/Services/LoginService'
 ], function ($, _, Backbone, globals, NavbarTemplate, LoginService) {
     var NavbarView = Backbone.View.extend({
-        el: $("#navbar"),
+        el: "#navbar",
         template: NavbarTemplate,
         initialize: function () {
         },
         events: {
             "click #logout": "logout",
             "click #news": "newsPage",
-            "click #genres": "showGenres"
+            "click #genres": "genresPage",
+            "click #borrow": "borrowPage"
         },
-        showGenres: function(){
+        borrowPage: function(){
+             location.hash = 'borrow';
+        },
+        genresPage: function(){
              location.hash = 'genres';
         },
         newsPage: function(){

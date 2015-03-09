@@ -5,8 +5,8 @@
         "description": "THE WICKED SIDE OF WIZARDRY Cute girl wizard Marle wants to join the Fairy Tail, a club for the most powerful wizards.",
         "genre": "Action",
         "characters": "",
-        "qualification": 8,
-        "img": "/imgs/site/characters1.jpg" 
+        "qualification": 7.5,
+        "img": "imgs/comic/fairytail.jpg" 
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "genre": "Comedy",
         "characters": "Rodolfo Casa Perro",
         "qualification": 9,
-        "img": "../imgs/site/narutomanga.png" 
+        "img": "imgs/comic/onepiece.jpg" 
     },
       {
         "id": 3,
@@ -23,8 +23,8 @@
         "description": " Bleach follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper.",
         "genre": "Action",
         "characters": "",
-        "qualification": 8,
-        "img": "/imgs/site/characters1.jpg" 
+        "qualification": 8.25,
+        "img": "imgs/comic/bleach.jpg" 
     },
       {
         "id": 4,
@@ -33,7 +33,7 @@
         "genre": "Sci-Fi",
         "characters": "Rodolfo Casa Perro",
         "qualification": 8,
-        "img": "/imgs/site/characters1.jpg" 
+        "img": "imgs/comic/worldtrigger.jpg" 
     },
       {
         "id": 5,
@@ -41,8 +41,8 @@
         "description": "Revolves around a weak, unassertive boy named Sena Kobayakawa who enters the high school of his choice—Deimon Private Senior High School.",
         "genre": "Sport",
         "characters": "Rodolfo Casa Perro",
-        "qualification": 8,
-        "img": "/imgs/site/characters1.jpg" 
+        "qualification": 6.25,
+        "img": "imgs/comic/eyeshield21.jpg" 
     },
       {
         "id": 6,
@@ -50,15 +50,15 @@
         "description": "The Straw Hat Pirates make their way to Alabasta, leading to battles with Baroque Works and their leader, Sir Hasano. ",
         "genre": "Horror",
         "characters": "",
-        "qualification": 8,
-        "img": "/imgs/site/characters1.jpg" 
+        "qualification": 4.5,
+        "img": "imgs/comic/apocalypse.jpg" 
     },  {
         "id": 7,
         "tittle": "Gantz",
         "description": "Gantz tells the story of Kei Kurono and his friend Masaru Kato who die in a train accident and become part of a semi-posthumous game.",
         "genre": "Sci-Fi",
         "characters": "",
-        "qualification": 8,
-        "img": "/imgs/site/characters1.jpg" 
+        "qualification": 9.75,
+        "img": "imgs/comic/gantz.jpg" 
     }
 ]

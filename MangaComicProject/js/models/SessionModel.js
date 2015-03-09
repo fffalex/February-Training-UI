@@ -34,6 +34,8 @@ define([
             else
                 role= "Basic User";
             return {
+                photo: user.photo, 
+                name: user.name,
                 fullname: user.fullname,
                 mail: user.mail,
                 isAdmin: role

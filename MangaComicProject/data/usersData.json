@@ -5,15 +5,36 @@
         "pass": "admin",
         "mail": "casaperro@hotmail",
         "fullname": "Rodolfo Casa Perro",
-        "isAdmin": false
+        "isAdmin": true,
+        "photo": "imgs/users/admin1.jpg",
+        "borrowed": [
+            {
+                "id": 1,
+                "tittle": "Fairy Tail",
+                "description": "THE WICKED SIDE OF WIZARDRY Cute girl wizard Marle wants to join the Fairy Tail, a club for the most powerful wizards.",
+                "genre": "Action",
+                "characters": "",
+                "qualification": 7.5,
+                "img": "imgs/comic/fairytail.jpg"
+            },
+            {
+                "id": 2,
+                "tittle": "One Piece",
+                "description": "The series begins with the execution of Gol D. Roger, a man known as the King of the Pirates (海賊王 Kaizokuō?). Just before his death, Roger announces that his treasure, the One Piece (ひとつなぎの大秘宝 (ワンピース) Wan Pīsu?).",
+                "genre": "Comedy",
+                "characters": "Rodolfo Casa Perro",
+                "qualification": 9,
+                "img": "imgs/comic/onepiece.jpg"
+            }]
     },
     {
         "id": 1,
-        "name": "alexander",
-        "pass": "adminadmin",
+        "name": "alex",
+        "pass": "admin",
         "mail": "tupendex@hotmail",
-        "fullname": "Alexander Javier Rodolfo Alberto Dedek",
-        "isAdmin": true
+        "fullname": "Alexander Rodolfo Jacinto Transito Dedek",
+        "isAdmin": false,
+        "photo": "imgs/users/user1.jpg"
     },
     {
         "id": 2,
@@ -21,6 +42,7 @@
         "pass": "asdasd",
         "mail": "casaperro@hotmail",
         "fullname": "Rodolfo Casa Perro",
-        "isAdmin": false
+        "isAdmin": false,
+        "photo": "imgs/users/user2.jpg"
     }
 ]

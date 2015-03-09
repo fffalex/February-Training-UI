@@ -15,10 +15,11 @@
                             <table class="table">
 
                                 <!--foreach top--->
-                                <% _.each(comics, function(comic){ %>
+                                <% var list = _.sortBy(comics, 'qualification');
+                                _.each(list, function(comic){ %>
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }); %>
@@ -36,11 +37,11 @@
                     <div id="collapseTwo" class="panel-collapse collapse">
                         <div class="panel-body">
                             <table class="table">
-                                
+
                                 <% _.each(comics, function(comic){ %>
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }); %>
@@ -58,11 +59,11 @@
                     <div id="collapseThree" class="panel-collapse collapse">
                         <div class="panel-body">
                             <table class="table">
-                                
+
                                 <% _.each(comics, function(comic){ %>
                                 <tr>
                                     <td>
-                                        <img src='api.com'/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
                                     </td>
                                 </tr>
                                 <% }); %>
@@ -74,6 +75,5 @@
             </div>
         </div>
     </div>
+</div>
 
-</div>
-</div>

@@ -1,14 +1,14 @@
 
 <div class="row clearfix">
-    <div class='col-md-12'>
+    <div class='col-md-12 jumbotron'>
         <% _.each(newlist, function(newitem){ %>
         <div class="row">
-            <div class="col-md-3 bg_blur">
-
+            <div class="col-md-3 thumbnail">
+                <img src="<%= newitem.get('img')%>" style="width: 150px;">
             </div>
             <div class="col-md-8">
                 <div class="header">
-                    <h1><%= newitem.get('tittle')%></h1>
+                    <h3><%= newitem.get('tittle')%></h3>
                     <h4><%= newitem.get('summary')%></h4>
                     <span><%= newitem.get('description')%></span>
                 </div>
@@ -16,32 +16,48 @@
                 <span class="pull right"><i class="fa fa-thumbs-o-up fa-lg"></i>26</span>
             </div>
         </div>
-    </div> 
-</div>
-<% }); %>
+        <% }); %>
 
-<div class="row clearfix">
-    <div class='col-md-12'>
-         <div class="row">
-            <div class="col-md-3 bg_blur">
 
-            </div>
-            <div class="col-md-8">
-                <div class="header">
-                    <h1>Dojinshi Project + Augmented Reality</h1>
-                    <h4>Soon you can watch your favorite manga in 3d</h4>
-                    <p>You can see a little example how the comics can be mixed with the augmented reality !</p>
-                    <p>1. First download this app in <a href="https://www.dropbox.com/s/nyf5hvc0c016aed/PokeMangaAnimationUnity.apk?dl=0">PokeMangaAnimation</a> or scan this QR on your android:<img src="../imgs/site/unitylink.png" alt=""/></p>
-                    <p>2. Install it and run!</p>
-                    <p>3. Use your camera to look the picture of the comic and enjoy UniChan movements ... beware with the wild pokemons!</p>
-                    <img src="../imgs/site/poketarget.jpg" alt=""/>
+        <div class="row clearfix">
+            <div class='col-md-12'>
+                <div class="row">
+                    <div class="col-md-3 bg_blur">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="header">
+                            <h3>Dojinshi Project + Augmented Reality</h3>
+                            <h4>Soon you can watch your favorite manga in 3d</h4>
+                            You can see a little example how the comics can be mixed with the augmented reality !
+                            <br>
+                            1. First download this app in <a href="https://www.dropbox.com/s/nyf5hvc0c016aed/PokeMangaAnimationUnity.apk?dl=0">PokeMangaAnimation</a> or scan this QR on your android:
+                            <br>
+                            <center>
+                                <img style="width: 100px" src="imgs/site/unitylink.png" alt=""/>
+                            </center>
+                            <br>
+                            2. Install it and run!
+                            3. Use your camera to look the picture of the comic and enjoy UniChan movements ... beware with the wild pokemons!
+                            <br>
+                            <br>
+                            <center>
+                                <img src="imgs/site/poketarget.jpg" alt="" style='width: 250px'/>
+                            </center>
+                        </div>
+                        <br>
+                        <span class="pull right"><i class="fa fa-thumbs-o-up fa-lg"></i>26</span>
+                    </div>
                 </div>
-                <br>
-                <span class="pull right"><i class="fa fa-thumbs-o-up fa-lg"></i>26</span>
-            </div>
+            </div> 
         </div>
+
+
     </div> 
 </div>
+
+
+
 
 
 

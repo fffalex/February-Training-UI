@@ -1,0 +1,81 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-md-8 jumbotron">
+
+            <% _.each(comics, function(comic){ %>
+            <div class="row">
+                <div class="col-md-8 table">
+                    <div class="page-header media-heading">
+                        <div class="row">
+                            <div class="col-md-3 thumbnail">
+                                <img src="<%= comic.img%>" style="width: 50px;">
+                            </div>
+                            <div class="col-md-8">
+                                <h3><%= comic.tittle%></h3>
+                                <span>Qualification <%= comic.qualification%></span>
+                                <span><%= comic.genre%></span>
+                            </div>
+                        </div>
+                        <h4><small class="pull-right">45 comments</small>Comments </h4>
+                    </div>
+
+                    <div class="comments-list">
+                        <div class="media panel panel-default" >
+                            <div class="panel-body">
+                                <p class="pull-right"><small>5 days ago</small></p>
+                                <a class="media-left" href="#">
+                                    <img src="http://lorempixel.com/40/40/people/1/">
+                                </a>
+                                <div class="media-body">
+
+                                    <h4 class="media-heading user_name">Baltej Singh</h4>
+                                    Wow! this is really great.
+
+                                    <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media panel panel-default">
+                            <div class="panel-body">
+                                <p class="pull-right"><small>5 days ago</small></p>
+                                <a class="media-left" href="#">
+                                    <img src="http://lorempixel.com/40/40/people/2/">
+                                </a>
+                                <div class="media-body">
+
+                                    <h4 class="media-heading user_name">Baltej Singh</h4>
+                                    Wow! this is really great.
+
+                                    <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media panel panel-default">
+                            <div class="panel-body">
+
+                                <p class="pull-right"><small>5 days ago</small></p>
+                                <a class="media-left" href="#">
+                                    <img src="http://lorempixel.com/40/40/people/3/">
+                                </a>
+                                <div class="media-body">
+
+                                    <h4 class="media-heading user_name">Baltej Singh</h4>
+                                    Wow! this is really great.
+
+                                    <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <% }); %>
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
