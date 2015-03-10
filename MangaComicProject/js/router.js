@@ -13,10 +13,11 @@ define([
     'views/NewsView',
     'views/GenreView',
     'views/BorrowView',
-    'views/LoanView'
+    'views/LoanView',
+    'views/SearchView'
 
 ], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView,
-        PageBodyComicsView, SidebarView, NewsView, GenreView, BorrowView,LoanView) {
+        PageBodyComicsView, SidebarView, NewsView, GenreView, BorrowView,LoanView,SearchView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -26,6 +27,7 @@ define([
             'genres': 'showGenres',
             'borrow': 'showBorrows',
             'loan' : 'showLoan',
+            'viewcomic/:id': 'showComic',
             // Default
             '*actions': 'defaultAction'
         }
@@ -34,7 +36,15 @@ define([
     var initialize = function () {
         //CREATE NEW ROUTER
         var app_router = new AppRouter;
-
+         app_router.on('route:showComic', function (id) {
+            if (!globals.session.isConnected()) {
+                app_router.navigate('login', {trigger: true});
+            } else {     
+                var searchView = new SearchView;
+                searchView.render(id);
+            }
+        });
+        
         app_router.on('route:showBorrows', function () {
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
@@ -48,6 +58,7 @@ define([
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
             } else {
+
                 var loanView = new LoanView;
                 loanView.render();
             }
@@ -57,6 +68,8 @@ define([
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
             } else {
+                
+
                 var newsView = new NewsView;
                 newsView.render();
             }
@@ -66,6 +79,7 @@ define([
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
             } else {
+
                 var genreView = new GenreView;
                 genreView.render();
             }
@@ -76,6 +90,7 @@ define([
             if (!globals.session.isConnected()) {
                 app_router.navigate('login', {trigger: true});
             } else { 
+
                 var pageBodyComicsView = new PageBodyComicsView;
                 pageBodyComicsView.render();
             }
@@ -86,6 +101,7 @@ define([
                 var loginView = new LoginView;
                 loginView.render();
             } else {
+
                 app_router.navigate('home', {trigger: true});
             }
         });
@@ -102,6 +118,8 @@ define([
 //    var footerView = new FooterView();
 
         Backbone.history.start();
+        
+
     };
     return {
         initialize: initialize

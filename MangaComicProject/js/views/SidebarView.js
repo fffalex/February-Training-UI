@@ -13,7 +13,7 @@ define([
         render: function () {
             var collection = globals.comicRepository;
 
-            var compiledTemplate = _.template(this.template)({comics: collection.models});
+            var compiledTemplate = _.template(this.template)({comics: collection.sortByRate()});
             this.$el.html(compiledTemplate);
         }
     });

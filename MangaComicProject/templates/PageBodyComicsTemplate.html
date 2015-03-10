@@ -4,9 +4,9 @@
 
         
             <div class="row">
-                <% _.each(comics, function(comic){ %>
+                <%_.each(comics, function(comic){ %>
                 <div class="col-xs-6 col-md-3">
-                    <a href="#" class="thumbnail" data-toggle="tooltip" data-placement="right" data-container="body" title="<%= comic.get('description')%>">
+                    <a href="#viewcomic/<%= comic.get('id')%>" class="thumbnail"  data-toggle="tooltip" data-placement="right" data-container="body" title="<%= comic.get('description')%>">
                         <img src="<%- comic.get('img')%>" alt="" class="comic-img"/>
                         <h6><%= comic.get('tittle')%></h6>
                     </a>

@@ -1,7 +1,6 @@
-<div class="container">
     <div class="row">
-        <div class="col-sm-3 col-md-3">
-            <div class="panel-group" id="accordion">
+        <div class="col-md-12">
+            <div class="panel-group border-black" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -15,11 +14,10 @@
                             <table class="table">
 
                                 <!--foreach top--->
-                                <% var list = _.sortBy(comics, 'qualification');
-                                _.each(list, function(comic){ %>
+                                <% _.each(comics, function(comic){ %>
                                 <tr>
                                     <td>
-                                        <img src="<%= comic.get('img')%>"/> <span><%= comic.get('tittle')%></span> 
+                                        <img src="<%= comic.get('img')%>"/><span> <%= comic.get('tittle')%>  (<%= comic.get('qualification')%> <i class='glyphicon glyphicon-star'></i>)</span> 
                                     </td>
                                 </tr>
                                 <% }); %>
@@ -75,5 +73,5 @@
             </div>
         </div>
     </div>
-</div>
+
 

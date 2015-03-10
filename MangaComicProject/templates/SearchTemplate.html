@@ -1,16 +1,22 @@
 <!-- Succes-->
 <% if( wanted != undefined) { %>
 <div class="col-sm-12 ">
-    <div class="alert alert-success col-sm-6">
+    <div class="alert alert-success col-sm-12">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
             ×</button>
-        <span class="glyphicon glyphicon-ok"></span> <strong>Comic Found</strong>
+        <span class="glyphicon glyphicon-ok"></span> <strong>Comic wanted</strong>
         <hr class="message-inner-separator">
-        <div class="col-md-12">
-            <a href="#" style="width: 100px" class="thumbnail" data-toggle="tooltip" data-placement="right" data-container="body" title="<%= wanted.get('description')%>">
+        <div class="col-md-4">
+            <a href="#" style="width: 120px" class="thumbnail">
                 <img src="<%- wanted.get('img')%>" alt="" class="comic-img"/>
                 <h6><%= wanted.get('tittle')%></h6>
             </a>
+        </div>
+       <div class="col-md-8">
+           <h3><%= wanted.get('tittle')%></h3>
+           <h4><%= wanted.get('genre')%></h4>
+           <p><%= wanted.get('description')%></p>
+           <p><%= wanted.get('qualification')%> <i class="glyphicon glyphicon-star"></i></p>
         </div>
     </div>
 </div>
@@ -19,7 +25,7 @@
     <div class="alert alert-warning">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
             ×</button>
-        <span class="glyphicon glyphicon-record"></span> <strong>Not Found</strong>
+        <span class="glyphicon glyphicon-record"></span><strong>Not Found</strong>
         <hr class="message-inner-separator">
         <p>
             Best check yo self, you're not looking too good.</p>

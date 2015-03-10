@@ -1,20 +1,8 @@
 
 /* =============================================================================
    Primary styles
-   Author: 
+   Author: Its me Mario =)
    ========================================================================== */
-/*div#login-container {
-    width: 400px;
-    color: #FFF;
-    background-color: rgba(3, 3, 3, 0.8);
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px #777 solid;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px 5px #333;
-}*/
-
 div#log-box{
     margin:10%;
 }
@@ -27,16 +15,28 @@ div#log-box{
     box-shadow: 0px 5px 10px 5px #333;
 }
 
-#tittle-bar, #header, #accordion{
+.border-black{
+    padding: 5px;
+    background-color: rgba(3, 3, 3, 0.85);
+    border: 1px #777 solid;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 5px #333;
+}
+
+#tittle-bar, #header{
     background-color: rgba(3, 3, 3, 0.85);
     margin-top: 10px;
     border: 1px #777 solid;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 5px #333;
 }
-#accordion, #adobe-cont{
-    padding:5px;
+
+
+#accordion{
+    margin-left: 25px;
 }
+
+
 
 #accordion img, #genres-accordion img{
     width: 35px;
@@ -61,6 +61,7 @@ div#log-box{
     float: left;
     z-index: 5;
 }
+
 body {
     margin:2%;
     background-image: url("../imgs/site/manga-bg.png");
@@ -75,11 +76,6 @@ body {
 #login-container {
     padding: 25px;
     position: fixed;
-}
-
-#login-container button{
-    background-color: #7A0707;
-    border-color: #AAA;
 }
 
 .form-login {
