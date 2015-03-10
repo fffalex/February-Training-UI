@@ -6,7 +6,8 @@
         "genre": "Action",
         "characters": "",
         "qualification": 7.5,
-        "img": "imgs/comic/fairytail.jpg" 
+        "img": "imgs/comic/fairytail.jpg",
+        "status": "unavailable"
     },
     {
         "id": 2,
@@ -15,50 +16,57 @@
         "genre": "Comedy",
         "characters": "Rodolfo Casa Perro",
         "qualification": 9,
-        "img": "imgs/comic/onepiece.jpg" 
+        "img": "imgs/comic/onepiece.jpg",
+        "status": "unavailable"
     },
-      {
+    {
         "id": 3,
         "tittle": "Bleach",
         "description": " Bleach follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper.",
         "genre": "Action",
         "characters": "",
         "qualification": 8.25,
-        "img": "imgs/comic/bleach.jpg" 
+        "img": "imgs/comic/bleach.jpg",
+        "status": "available"
     },
-      {
+    {
         "id": 4,
         "tittle": "World Trigger",
         "description": "Is a Japanese manga series written and illustrated by Daisuke Ashihara, and serialized in Weekly Shōnen Jump since February 2013.",
         "genre": "Sci-Fi",
         "characters": "Rodolfo Casa Perro",
         "qualification": 8,
-        "img": "imgs/comic/worldtrigger.jpg" 
+        "img": "imgs/comic/worldtrigger.jpg",
+        "status": "available"
     },
-      {
+    {
         "id": 5,
         "tittle": "Eyeshield 21",
         "description": "Revolves around a weak, unassertive boy named Sena Kobayakawa who enters the high school of his choice—Deimon Private Senior High School.",
         "genre": "Sport",
         "characters": "Rodolfo Casa Perro",
         "qualification": 6.25,
-        "img": "imgs/comic/eyeshield21.jpg" 
+        "img": "imgs/comic/eyeshield21.jpg",
+        "status": "available"
     },
-      {
+    {
         "id": 6,
         "tittle": "Apocalypse no Toride",
         "description": "The Straw Hat Pirates make their way to Alabasta, leading to battles with Baroque Works and their leader, Sir Hasano. ",
         "genre": "Horror",
         "characters": "",
         "qualification": 4.5,
-        "img": "imgs/comic/apocalypse.jpg" 
-    },  {
+        "img": "imgs/comic/apocalypse.jpg",
+        "status": "unavailable"
+    },
+    {
         "id": 7,
         "tittle": "Gantz",
         "description": "Gantz tells the story of Kei Kurono and his friend Masaru Kato who die in a train accident and become part of a semi-posthumous game.",
         "genre": "Sci-Fi",
         "characters": "",
         "qualification": 9.75,
-        "img": "imgs/comic/gantz.jpg" 
+        "img": "imgs/comic/gantz.jpg",
+        "status": "unavailable"
     }
 ]

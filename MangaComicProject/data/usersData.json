@@ -15,7 +15,8 @@
                 "genre": "Action",
                 "characters": "",
                 "qualification": 7.5,
-                "img": "imgs/comic/fairytail.jpg"
+                "img": "imgs/comic/fairytail.jpg",
+                "status": "unavailable"
             },
             {
                 "id": 2,
@@ -24,17 +25,28 @@
                 "genre": "Comedy",
                 "characters": "Rodolfo Casa Perro",
                 "qualification": 9,
-                "img": "imgs/comic/onepiece.jpg"
+                "img": "imgs/comic/onepiece.jpg",
+                "status": "unavailable"
             }]
     },
     {
         "id": 1,
         "name": "alex",
-        "pass": "admin",
+        "pass": "alex",
         "mail": "tupendex@hotmail",
         "fullname": "Alexander Rodolfo Jacinto Transito Dedek",
         "isAdmin": false,
-        "photo": "imgs/users/user1.jpg"
+        "photo": "imgs/users/user1.jpg",
+        "borrowed": [{
+                "id": 6,
+                "tittle": "Apocalypse no Toride",
+                "description": "The Straw Hat Pirates make their way to Alabasta, leading to battles with Baroque Works and their leader, Sir Hasano. ",
+                "genre": "Horror",
+                "characters": "",
+                "qualification": 4.5,
+                "img": "imgs/comic/apocalypse.jpg",
+                "status": "unavailable"
+            }]
     },
     {
         "id": 2,
@@ -43,6 +55,16 @@
         "mail": "casaperro@hotmail",
         "fullname": "Rodolfo Casa Perro",
         "isAdmin": false,
-        "photo": "imgs/users/user2.jpg"
+        "photo": "imgs/users/user2.jpg",
+        "borrowed": [{
+                "id": 7,
+                "tittle": "Gantz",
+                "description": "Gantz tells the story of Kei Kurono and his friend Masaru Kato who die in a train accident and become part of a semi-posthumous game.",
+                "genre": "Sci-Fi",
+                "characters": "",
+                "qualification": 9.75,
+                "img": "imgs/comic/gantz.jpg",
+                "status": "unavailable"
+            }]
     }
 ]

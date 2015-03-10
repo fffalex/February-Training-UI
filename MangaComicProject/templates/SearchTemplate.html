@@ -1,0 +1,28 @@
+<!-- Succes-->
+<% if( wanted != undefined) { %>
+<div class="col-sm-12 ">
+    <div class="alert alert-success col-sm-6">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+            ×</button>
+        <span class="glyphicon glyphicon-ok"></span> <strong>Comic Found</strong>
+        <hr class="message-inner-separator">
+        <div class="col-md-12">
+            <a href="#" style="width: 100px" class="thumbnail" data-toggle="tooltip" data-placement="right" data-container="body" title="<%= wanted.get('description')%>">
+                <img src="<%- wanted.get('img')%>" alt="" class="comic-img"/>
+                <h6><%= wanted.get('tittle')%></h6>
+            </a>
+        </div>
+    </div>
+</div>
+<% }else { %>
+<div class="col-sm-12">
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+            ×</button>
+        <span class="glyphicon glyphicon-record"></span> <strong>Not Found</strong>
+        <hr class="message-inner-separator">
+        <p>
+            Best check yo self, you're not looking too good.</p>
+    </div>
+</div>
+<% }%>

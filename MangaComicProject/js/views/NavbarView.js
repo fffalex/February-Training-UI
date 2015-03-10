@@ -4,8 +4,9 @@ define([
     'backbone',
     'globals',
     'text!templates/NavbarTemplate.html',
-    'models/Services/LoginService'
-], function ($, _, Backbone, globals, NavbarTemplate, LoginService) {
+    'models/Services/LoginService',
+    'views/SearchView'
+], function ($, _, Backbone, globals, NavbarTemplate, LoginService,SearchView) {
     var NavbarView = Backbone.View.extend({
         el: "#navbar",
         template: NavbarTemplate,
@@ -13,9 +14,23 @@ define([
         },
         events: {
             "click #logout": "logout",
+            "click #editions": "editions",
             "click #news": "newsPage",
             "click #genres": "genresPage",
-            "click #borrow": "borrowPage"
+            "click #borrow": "borrowPage",
+            "click #loans" : "loanPage",
+            "click #search": "search"
+        },
+        search: function(){
+            var value = $("#text-search").val();
+            var searchView = new SearchView;
+            searchView.render(value);
+        },
+        loanPage: function(){
+            location.hash = 'loan';
+        },
+        editions: function(){
+             location.hash = 'home';
         },
         borrowPage: function(){
              location.hash = 'borrow';

@@ -12,10 +12,11 @@ define([
     'views/SidebarView',
     'views/NewsView',
     'views/GenreView',
-    'views/BorrowView'
+    'views/BorrowView',
+    'views/LoanView'
 
 ], function ($, _, Backbone, globals, LoginView, HomeView, HeaderView, NavbarView,
-        PageBodyComicsView, SidebarView, NewsView, GenreView, BorrowView) {
+        PageBodyComicsView, SidebarView, NewsView, GenreView, BorrowView,LoanView) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
@@ -24,6 +25,7 @@ define([
             'news': 'showNewsPage',
             'genres': 'showGenres',
             'borrow': 'showBorrows',
+            'loan' : 'showLoan',
             // Default
             '*actions': 'defaultAction'
         }
@@ -39,6 +41,15 @@ define([
             } else {
                 var borrowView = new BorrowView;
                 borrowView.render();
+            }
+        });
+        
+        app_router.on('route:showLoan', function () {
+            if (!globals.session.isConnected()) {
+                app_router.navigate('login', {trigger: true});
+            } else {
+                var loanView = new LoanView;
+                loanView.render();
             }
         });
 

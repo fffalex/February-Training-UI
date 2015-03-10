@@ -1,19 +1,31 @@
 <div class="container">
     <div class="row" >
         <div class="col-md-8 jumbotron">
+            <h2>Your Borrows</h2>
 
-            <% _.each(comics, function(comic){ %>
+            <% var i=1; _.each(comics, function(comic){ %>
             <div class="row">
                 <div class="col-md-8 table">
                     <div class="page-header media-heading">
-                        <div class="row">
+                        <div class="row panel panel-heading">
                             <div class="col-md-3 thumbnail">
-                                <img src="<%= comic.img%>" style="width: 50px;">
+                                <img src="<%= comic.img%>" style="width: 100px;" data-toggle="tooltip" data-placement="right" data-container="body" title="<%= comic.description%>">
                             </div>
                             <div class="col-md-8">
                                 <h3><%= comic.tittle%></h3>
-                                <span>Qualification <%= comic.qualification%></span>
+                                <br>
                                 <span><%= comic.genre%></span>
+                                <h6>Borrow Date: 10/03/2015</h6>
+                                <span>Qualification: <strong><%= comic.qualification%></strong>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        
+                                </span>
+                              
+                                
                             </div>
                         </div>
                         <h4><small class="pull-right">3 comments</small>Comments </h4>
@@ -31,7 +43,7 @@
                                     <h4 class="media-heading user_name">Green Figther</h4>
                                     Wow! this is really great.
 
-                                    <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                                    <p><small><a href="http://cdni.wired.co.uk/1920x1280/k_n/Like.jpg">Like</a> - <a href="https://www.facebook.com/">Share</a></small></p>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +58,7 @@
                                     <h4 class="media-heading user_name">Baltej Xi</h4>
                                     Wow! this is really great.
 
-                                    <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                                    <p><small><a href="http://cdni.wired.co.uk/1920x1280/k_n/Like.jpg">Like</a> - <a href="https://www.facebook.com/">Share</a></small></p>
                                 </div>
                             </div>
                         </div>
@@ -62,14 +74,28 @@
                                     <h4 class="media-heading user_name">Rodrigo</h4>
                                     Not bad....
 
-                                    <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
+                                    <p><small><a href="http://cdni.wired.co.uk/1920x1280/k_n/Like.jpg">Like</a> - <a href="https://www.facebook.com/">Share</a></small></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="media panel panel-default">
+                            <div class="panel-body">
+                                <a class="media-left" href="#">
+                                    <img src="<%= user%>" style='width: 50px'>
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading user_name">Me</h4>
+                                    <textarea id="textarea<%= i%>" class="form-control" rows="3"></textarea>
+                                    <br>
+                                    <button type="button" id="comment<%= i%>" class="btn btn-default btn-primary">Coment</button>
                                 </div>
                             </div>
                         </div>
                     </div>           
                 </div>
             </div>
-            <% }); %>
+            <% i +=1 }); i =0  %>
 
 
 

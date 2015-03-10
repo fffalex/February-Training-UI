@@ -11,7 +11,8 @@ define([
             genre: "",
             characters: "",
             qualification: "",
-            img: ""
+            img: "",
+            status: "",
         }
     });
 
