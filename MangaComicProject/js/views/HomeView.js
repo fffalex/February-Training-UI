@@ -17,7 +17,7 @@ define([
         },
         checkSession: function(){
            if(globals.session.isConnected())
-           this.render();
+            this.render();
         },
         render: function () {
             this.$el.html(this.template);

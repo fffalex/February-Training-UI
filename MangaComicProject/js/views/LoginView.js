@@ -35,6 +35,13 @@ define([
                 }
             }
 
+            //FUNCTION USING BOOSTRAP TO SHOW MODALS
+            function showModal(textToShow) {
+                $('#modal-message').text(textToShow);
+                $('#modal').modal('show');
+            }
+
+
         },
         render: function () {
             var compiledTemplate = _.template(this.template)({name: "Robert"});
@@ -47,10 +54,5 @@ define([
 
 });
 
-//FUNCTION USING BOOSTRAP TO SHOW MODALS
-function showModal(textToShow) {
-    $('#modal-message').text(textToShow);
-    $('#modal').modal('show');
-}
 
 

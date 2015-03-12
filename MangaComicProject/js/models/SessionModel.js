@@ -24,6 +24,8 @@ define([
         disconnect: function(){
             this.set("connected", false);
             this.set("user", new UserModel);
+            this.save();
+
         },
         getUserData: function(){
             //Devuelvo datos interesantes para la session
